@@ -1,13 +1,10 @@
-import { useState } from 'react'
+import Counter from './components/counter'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
     <div className="App">
       <h1>Iniciando!</h1>
+      <Counter />
     </div>
   )
 }
-
-export default App
