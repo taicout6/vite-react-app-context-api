@@ -1,9 +1,13 @@
+import { useCount } from "../../context/count";
+
 export default function Mirror() {
+  const { count } = useCount();
   return (
     <div>
       <span>
-        <b>Mirror: 0</b>
+        <b>Mirror: </b>
+        { count }
       </span>
     </div>
-  )
+  );
 }

@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { useCount } from '../../context/count';
 
 export default function Counter() {
-  const [count, setCount] = useState(0)
+  const { count, setCount } = useCount();
   return (
     <div>
       <span>
@@ -13,5 +13,5 @@ export default function Counter() {
         Increase
       </button>
     </div>
-  )
+  );
 }
